@@ -3,53 +3,63 @@ module.exports = function(grunt) {
   //Task configuration
   grunt.initConfig({
 
-    //Clean directory before compilation
-    clean: {
-      build: {
-        src: [ 'dev' ]
-      },
-    },
-
-    //Copy current working files
     copy: {
       build: {
         cwd: 'src',
         src: [ '**', '!**/*.scss' ],
-        dest: 'dev',
+        dest: 'build',
         expand: true
       },
     },
 
-    //SASS CSS Preprocessor
-    sass: {                              // Task
-      dist: {                            // Target
-        options: {                       // Target options
-          style: 'expanded'
-        },
-        files: [{                         // Dictionary of files
-          'dev/css/*.css': '*.scss',      // 'destination': 'source'
-          dest: 'dev',
-          ext: '.css'
-        }]
+    clean: {
+      build: {
+        src: [ 'build' ]
+      },
+      css: {
+        src: [ 'build/**/*.css' ]
+      },
+      scripts: {
+        src: [ 'build/**/*.js' ]
       },
     },
 
-    //Automate vendor prefixes
-    autoprefixer: {
-      build: {
-        expand: true,
-        cwd: 'dev',
-        src: [ '**/*.css' ],
-        dest: 'dev'
+    sass: {
+      dist: {
+        options:{
+          style: 'expanded'
+        },
+        files: {
+          'build/css/style.scss': 'src/css/style.scss'
+        }
       }
     },
 
-    //Local development server
+    autoprefixer: {
+      build: {
+        expand: true,
+        cwd: 'build',
+        src: [ '**/*.css' ],
+        dest: 'build'
+      }
+    },
+
+    watch: {
+      css: {
+        files: 'src/**/*.scss',
+        tasks: [ 'stylesheets' ]
+      },
+      copy: {
+        files: [ 'src/**', '!src/**/*.scss' ],
+        tasks: [ 'copy' ]
+      }
+    },
+
     connect: {
       server: {
         options: {
           port: 4000,
-          base: 'dev',                 //Preview directory
+          base: 'build',
           hostname: '*'
         }
       }
@@ -57,42 +67,37 @@ module.exports = function(grunt) {
 
   });
 
-
   //Load dependencies
-  grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
 
+  //Register tasks
 
-  /* =========== Register tasks =========== */
 
-  //Developer mode
+  //Build stack
+  grunt.registerTask(
+    'build',
+    'Clean development directory, run CSS task',
+    [ 'clean:build', 'copy', 'css' ]
+  );
+
+  //Stylesheet automation
   grunt.registerTask(
     'css',
-    'Watch files, clean, compile and preview on changes',
-    ['sass', 'autoprefixer']
-  );
-
-
-  //Export
-  grunt.registerTask(
-    'export',
-    'Minifies and concatenates CSS/JS, compiles images to export directory',
-    ['task', 'task', 'task']
+    'Compile and autoprefix CSS',
+    [ 'sass', 'autoprefixer' ]
   );
 
   //Developer mode
   grunt.registerTask(
-    'dev',
-    'Watch files, clean, compile and preview on changes',
-    ['clean:dev', 'copy', 'css', 'watch']
+    'default',
+    'Developer mode, watches files and runs automation',
+    [ 'build', 'connect', 'watch' ]
   );
 
-};
+}
