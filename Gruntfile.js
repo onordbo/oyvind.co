@@ -30,7 +30,7 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          'build/css/style.scss': 'src/css/style.scss'
+          'build/css/style.css': 'src/css/style.scss'
         }
       }
     },
