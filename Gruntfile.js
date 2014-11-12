@@ -1,3 +1,5 @@
+//TODO: Add 'export mode' with cssmin, imagemin and uglify
+
 module.exports = function(grunt) {
 
   //Task configuration
@@ -30,7 +32,7 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          'build/css/style.css': 'src/css/style.scss'
+          'build/css/main.css': 'src/css/main.scss'
         }
       }
     },
@@ -47,7 +49,7 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: 'src/**/*.scss',
-        tasks: [ 'stylesheets' ]
+        tasks: [ 'css' ]
       },
       copy: {
         files: [ 'src/**', '!src/**/*.scss' ],
@@ -78,19 +80,18 @@ module.exports = function(grunt) {
 
   //Register tasks
 
+  //Stylesheet automation
+  grunt.registerTask(
+    'css',
+    'Compile and autoprefix CSS',
+    [ 'sass', 'autoprefixer' ]
+  );
 
   //Build stack
   grunt.registerTask(
     'build',
     'Clean development directory, run CSS task',
     [ 'clean:build', 'copy', 'css' ]
-  );
-
-  //Stylesheet automation
-  grunt.registerTask(
-    'css',
-    'Compile and autoprefix CSS',
-    [ 'sass', 'autoprefixer' ]
   );
 
   //Developer mode
