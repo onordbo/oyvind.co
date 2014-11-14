@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,oBAAqB;EACnB,UAAU,EAAE,UAAU;;;AAGxB,IAAK;EACH,sBAAsB,EAAE,WAAW;EACnC,mBAAmB,EAAE,SAAS;;;AAGhC,EAAG;EACD,KAAK,ECCC,OAAO;EDAb,SAAS,EAAE,IAAI;EACf,WAAW,EEZA,8BAAW;EFatB,SAAS,EAAE,WAAW",
+"mappings": "AAAA,oBAAqB;EACnB,UAAU,EAAE,UAAU;;;AAGxB,IAAK;EACH,sBAAsB,EAAE,WAAW;EACnC,mBAAmB,EAAE,SAAS;EAC9B,gBAAgB,ECuBT,IAAI;;;ADpBb,EAAG;EACD,KAAK,ECAC,OAAO;EDCb,SAAS,EAAE,IAAI;EACf,WAAW,EEbA,8BAAW;;;AFiBxB,KAAM;EACJ,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,KAAK;;;AAGhB,aAAc;EACZ,aAAa,EAAE,GAAG;EAClB,SAAS,EAAE,KAAK;EAChB,aAAa,EAAE,eAAe;EAC9B,UAAU,EAAE,oBAAoB",
 "sources": ["../../src/css/partials/landing_page.scss","../../src/css/partials/colors.scss","../../src/css/partials/typography.scss"],
 "names": [],
 "file": "main.css"

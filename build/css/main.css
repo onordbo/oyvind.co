@@ -5,13 +5,23 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: greyscale;
+  background-color: #ddd;
 }
 
 h1 {
   color: #0074D9;
   font-size: 40px;
   font-family: "Helvetica", Arial, sans-serif;
-  -webkit-transform: skew(20deg);
-      -ms-transform: skew(20deg);
-          transform: skew(20deg);
+}
+
+.main {
+  margin: 0 auto;
+  display: block;
+}
+
+#headshot img {
+  border-radius: 50%;
+  max-width: 300px;
+  border-radius: 1px solid white;
+  box-shadow: 1px 1px 1px 1px #000;
 }
