@@ -1,1 +1,69 @@
-$font-stack: 'Helvetica', Arial, sans-serif;
+//Proxima Nova
+
+//Standard
+$light: 'proxima_novalight';
+$lightItalic: 'proxima_novalight_italic';
+$italic: 'proxima_novaregular_italic';
+$boldItalic: 'proxima_nova_rgbold_italic';
+$bold: 'proxima_nova_rgbold';
+$black: 'proxima_novablack';
+$extraBold: 'proxima_novaextrabold';
+
+//Condensed
+$condensedBoldItalic: 'proxima_nova_condensedSBdIt';
+$condensedRegularItalic: 'proxima_nova_condensedRgIt';
+$condensedSemiBold: 'proxima_nova_condensedSBd';
+$condensedLightItalic: 'proxima_nova_condensedLtIt';
+$condensedLight: 'proxima_nova_condensedlight';
+
+
+//Semibold
+$semiBoldItalic: 'proxima_novasemibold_italic';
+$semiBold: 'proxima_novasemibold';
+
+//Regular
+$regularItalic: 'proxima_novaregular_italic';
+$regular: 'proxima_nova_rgregular';
+
+$cnRegular: 'proxima_nova_cn_rgregular';
+
+//Fallback fonts
+$fallback: 'Helvetica', Arial, sans-serif;
+
+//Typography styling
+
+h1 {
+  color: $black;
+  font-size: 40px;
+  font-family: $bold, $fallback;
+}
+
+h3 {
+  font-family: $light, $fallback;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+h5 {
+  color: $blue;
+  font-family: $regular, $fallback;
+  font-size: 16px;
+}
+
+p {
+  font-family: $bold;
+  font-size: 18px;
+  line-height: 1.8em;
+}
+
+a {
+  color: $blue;
+  &:hover {
+    text-decoration: none;
+    color: darken($blue, 15%);
+  }
+}
+
+#about {
+  border-bottom: 1px solid $blue;
+}

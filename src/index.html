@@ -1,67 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Test document</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta type ="description" content="Digital designer.">
+    <title>Øyvind Nordbø</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
   <body>
 
-
-  <div class="main">
-    <div class="head">
-    <div class="content">
-      <div class="col-xs-12 col-md-12 col-lg-12">
-        <img src="img/headshot.jpg" alt="">
-        <h1>Øyvind Nordbø</h1>
-        <h5>Digital designer, or <a href="/about">something</a> like that.</h5>
-        <div id="social">
-          <ul>
-            <li><a href="#"><img src="img/external/file.svg" alt="AltText"></a></li>
-            <li><a href="#"><img src="img/external/file.svg" alt="AltText"></a></li>
-            <li><a href="#"><img src="img/external/file.svg" alt="AltText"></a></li>
-            <li><a href="#"><img src="img/external/file.svg" alt="AltText"></a></li>
-          </ul>
+    <div class="main">
+      <div class="head">
+      <div class="content">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+          <img src="img/headshot.jpg" id="headshot">
+          <div class="headerContent">
+            <h1>Øyvind Nordbø</h1>
+            <h5>Digital designer, or <a id="about" href="/about">something</a> like that.</h5>
+            <div id="social">
+              <ul>
+                <li><a href="https://twitter.com/onordbo" target="_blank"><img class="icon" id="twitter" src="img/external/twitter.svg" alt="AltText"></a></li>
+                <li><a href="mailto:hello@oyvind.co"><img class="icon" id="email" src="img/external/email.svg" alt="AltText"></a></li>
+                <li><a href="https://github.com/onordbo" target="_blank"><img class="icon" id="github" src="img/external/github.svg" alt="AltText"></a></li>
+                <li><a href="https://www.linkedin.com/in/onordbo" target="_blank"><img class="icon" id="linkedin" src="img/external/linkedin.svg" alt="AltText"></a></li>
+              </ul>
+            </div>
+          </div><!-- /.headerContent -->
         </div>
       </div>
-    </div>
-  </div><!-- /.head -->
+    </div><!-- /.head -->
 
-    <div class="content">
-      <div class="row">
+    <div class="row">
+      <div class="content list">
 
-        <!-- Projects -->
-        <div class="col-xs-6 col-md-6 col-lg-12">
-          <h3>List title goes here</h3>
-          <ul>
+        <div class="col-xs-6 col-md-6 col-lg-6">
+          <h3>Stuff I've done</h3>
+          <ul class="left-list">
             <li>
-              <a href=""><p>List item</p></a>
-              <a href=""><p>List item</p></a>
-              <a href=""><p>List item</p></a>
-              <a href=""><p>List item</p></a>
+              <a href="#"><p>Geolarm</p></a>
+              <a href="#"><p>Wholegrain</p></a>
+              <a href="#"><p>#Ruter</p></a>
+              <a href="#"><p>Swipe</p></a>
+              <a href="#"><p>Drooodle</p></a>
+              <a href="#"><p>Speedless</p></a>
+              <a href="#"><p>Shapr</p></a>
             </li>
           </ul>
-        </div>
+        </div><!-- /.projects -->
 
-        <!-- Client experience -->
-        <div class="col-xs-6 col-md-6 col-lg-12">
-          <h3>List title goes here</h3>
-          <ul>
+        <div class="col-xs-6 col-md-6 col-lg-6">
+          <h3>People I've worked with</h3>
+          <ul class="right-list">
             <li>
-              <a href=""><p>List item</p></a>
-              <a href=""><p>List item</p></a>
-              <a href=""><p>List item</p></a>
-              <a href=""><p>List item</p></a>
+              <a href="#"><p>DDB Oslo</p></a>
+              <a href="#"><p>Hyper Island</p></a>
+              <a href="#"><p>McDonald's</p></a>
+              <a href="#"><p>Peugeot</p></a>
+              <a href="#"><p>Nordea</p></a>
+              <a href="#"><p>Tropicana</p></a>
+              <a href="#"><p>NetCom</p></a>
             </li>
           </ul>
-        </div>
+        </div><!-- /.clients -->
       </div>
     </div>
 
   </div><!-- /.main -->
-
+<!--
+  <div id="footer">
+    <p>hello@oyvind.co // <a href="http://play.oyvind.co">playground</a> // +47 452 98 497</p>
+  </div id="footer">
+-->
 
   </body>
 </html>
