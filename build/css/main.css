@@ -1,5 +1,6 @@
+/* ====================================== */
 h1 {
-  color: "proxima_novablack";
+  color: #000;
   font-size: 40px;
   font-family: "proxima_nova_rgbold", "Helvetica", Arial, sans-serif;
 }
@@ -127,25 +128,39 @@ body {
   color: $gray;
 }
 */
-.fade {
+.fade-body {
   -webkit-animation: fade 1s ease-in-out;
           animation: fade 1s ease-in-out;
 }
 
+.fade-body {
+  -webkit-animation: fade .6s ease-in-out;
+          animation: fade .6s ease-in-out;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.fade-list {
+  -webkit-animation: fade .6s ease-in-out;
+          animation: fade .6s ease-in-out;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
 @-webkit-keyframes fade {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 100;
   }
 }
 
 @keyframes fade {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 100;
   }
 }

@@ -30,10 +30,12 @@ $cnRegular: 'proxima_nova_cn_rgregular';
 //Fallback fonts
 $fallback: 'Helvetica', Arial, sans-serif;
 
+/* ====================================== */
+
 //Typography styling
 
 h1 {
-  color: $black;
+  color: $solidBlack;
   font-size: 40px;
   font-family: $bold, $fallback;
 }
