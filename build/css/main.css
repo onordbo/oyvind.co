@@ -50,17 +50,10 @@ body {
   background-color: #ddd;
 }
 
-.main {
-  margin: 0 auto;
-  display: block;
-  max-width: 650px;
-}
-
 .head {
-  margin: 0 auto;
-  max-width: 500px;
-  display: block;
-  margin-top: 10%;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  max-width: 520px;
 }
 
 #headshot {
@@ -112,7 +105,7 @@ body {
 }
 
 .list {
-  margin-top: 180px;
+  max-width: 705px;
 }
 
 /*
@@ -131,20 +124,6 @@ body {
 .fade-body {
   -webkit-animation: fade 1s ease-in-out;
           animation: fade 1s ease-in-out;
-}
-
-.fade-body {
-  -webkit-animation: fade .6s ease-in-out;
-          animation: fade .6s ease-in-out;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.fade-list {
-  -webkit-animation: fade .6s ease-in-out;
-          animation: fade .6s ease-in-out;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
 }
 
 @-webkit-keyframes fade {

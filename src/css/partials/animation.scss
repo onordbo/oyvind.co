@@ -4,16 +4,6 @@
   animation: fade 1s ease-in-out;
 }
 
-.fade-body {
-  animation: fade .6s ease-in-out;
-  animation-delay: .3s;
-}
-
-.fade-list {
-  animation: fade .6s ease-in-out;
-  animation-delay: .3s;
-}
-
 @keyframes fade {
   0%     { opacity: 0   }
   100%   { opacity: 100 }

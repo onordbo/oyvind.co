@@ -4,17 +4,10 @@ body {
   background-color: $silver;
 }
 
-.main {
-  margin: 0 auto;
-  display: block;
-  max-width: 650px;
-}
-
 .head {
-  margin: 0 auto;
-  max-width: 500px;
-  display: block;
-  margin-top: 10%;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  max-width: 520px;
 }
 
 #headshot {
@@ -66,7 +59,7 @@ body {
 }
 
 .list {
-  margin-top: 180px;
+  max-width: 705px;
 }
 
 /*
