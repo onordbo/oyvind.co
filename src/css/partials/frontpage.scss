@@ -4,6 +4,46 @@ body {
   background-color: $silver;
 }
 
+//Typography styling
+
+h1 {
+  color: $solidBlack;
+  font-size: 40px;
+  font-family: $bold, $fallback;
+}
+
+h3 {
+  font-family: $light, $fallback;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+h5 {
+  color: $blue;
+  font-family: $regular, $fallback;
+  font-size: 16px;
+}
+
+p {
+  font-family: $bold;
+  font-size: 18px;
+  line-height: 1.8em;
+}
+
+a {
+  color: $blue;
+  transition: color .3s;
+  &:hover {
+    text-decoration: none;
+    color: darken($blue, 15%);
+  }
+}
+
+#about {
+  border-bottom: 1px solid $blue;
+}
+
+
 .head {
   margin-top: 30px;
   margin-bottom: 25px;

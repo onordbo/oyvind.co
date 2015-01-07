@@ -1,0 +1,36 @@
+@import "../css/partials/colors.scss";
+@import "../css/partials/typography.scss";
+@import "../css/partials/boiler.scss";
+
+$textColor: rgba(0, 0, 0, 0.8);
+
+body {
+  background-color: rgb(61, 120, 150);
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  margin: 20px 10px 20px 10px;
+}
+
+a > p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: $textColor;
+}
+
+.first {
+  font-family: $semiBold, $fallback;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: $textColor;
+}
+
+.body-text {
+  line-height: 2em;
+  font-size: 18px;
+  font-family: $regular, $fallback;
+  color: $textColor;
+}

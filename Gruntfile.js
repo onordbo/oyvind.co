@@ -29,10 +29,11 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         options:{
-          style: 'expanded'
+          style: 'compressed'
         },
         files: {
-          'build/css/main.css': 'src/css/main.scss'
+          'build/css/main.css': 'src/css/main.scss',
+          'build/about/about.css': 'src/about/about.scss'
         }
       }
     },
