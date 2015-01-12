@@ -48,9 +48,12 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      options: {
+        livereload: true,
+      },
       css: {
         files: 'src/**/*.scss',
-        tasks: [ 'css' ]
+        tasks: [ 'css' ],
       },
       copy: {
         files: [ 'src/**', '!src/**/*.scss' ],

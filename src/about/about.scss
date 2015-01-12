@@ -34,3 +34,14 @@ a > p {
   font-family: $regular, $fallback;
   color: $textColor;
 }
+
+//Mobile
+@media only screen
+and (max-width : 400px) {
+
+    #back {
+      margin-bottom: 30px;
+      font-size: 15px;
+    }
+
+}
