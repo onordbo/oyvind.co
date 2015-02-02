@@ -30,14 +30,18 @@ a > p {
 
 .body-text {
   line-height: 2em;
-  font-size: 18px;
+  font-size: 1.4em;
   font-family: $regular, $fallback;
   color: $textColor;
 }
 
 //Mobile
 @media only screen
-and (max-width : 400px) {
+and (max-width : 768px) {
+
+    .body-text p {
+      font-size: 1em;
+    }
 
     #back {
       margin-bottom: 30px;
