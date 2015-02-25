@@ -1,46 +1,122 @@
 @import "../css/partials/colors.scss";
 @import "../css/partials/typography.scss";
 @import "../css/partials/boiler.scss";
+@import "../css/partials/animation.scss";
 
-$textColor: rgba(0, 0, 0, 0.8);
+
+$textColor: rgba(0, 0, 0, 1);
 
 body {
-  background-color: rgb(61, 120, 150);
+  background-color: $silver;
 }
 
 img {
-  width: 40px;
-  height: 40px;
+  width: 100px;
   margin: 20px 10px 20px 10px;
+}
+
+a {
+  color: $blue;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+ul {
+  padding-left: 0px;
 }
 
 a > p {
   margin-top: 10px;
   margin-bottom: 30px;
-  font-size: 14px;
+  font-size: 18px;
   color: $textColor;
 }
 
-.first {
+h1 {
   font-family: $semiBold, $fallback;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 70px;
+  color: $textColor;
+}
+
+p {
+  line-height: 33px;
+  font-size: 18px;
+  font-family: $regular, $fallback;
   color: $textColor;
 }
 
 .body-text {
-  line-height: 2em;
-  font-size: 1.4em;
+  line-height: 37px;
+  font-size: 18px;
   font-family: $regular, $fallback;
   color: $textColor;
+}
+
+.container {
+  max-width: 660px;
+}
+
+.intro {
+  margin-top: 58px;
+}
+
+.tot {
+  margin: 50px 0 10px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.line {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 208px;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.buttons {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.BTN {
+  display: inline-block;
+}
+
+.viewProject {
+  background: #0074D9;
+  box-shadow: 0px 3px 0px 0px #004B8C;
+  border-radius: 7.59px;
+  margin: 0px 40px;
+  width: 186px;
+  height: 65px;
+  padding: 22px 40px 22px 40px;
+}
+
+.viewProject > p {
+    font-family: $regular;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 21px;
 }
 
 //Mobile
 @media only screen
 and (max-width : 768px) {
 
-    .body-text p {
-      font-size: 1em;
+    img {
+      width: 60px;
+    }
+
+    p {
+      font-size: 1.2em;
     }
 
     #back {
