@@ -3,7 +3,6 @@
 @import "../css/partials/boiler.scss";
 @import "../css/partials/animation.scss";
 
-
 $textColor: rgba(0, 0, 0, 1);
 
 body {
@@ -31,7 +30,7 @@ h1 {
 }
 
 h2 {
-  font-family: $light;
+  font-family: $light, $fallback;
   font-size: 24px;
   line-height: 29px;
   color: $blue;
@@ -43,14 +42,15 @@ h2 {
 
 h3 {
   margin-top: 30px;
-  font-family: $bold;
+  font-family: $bold, $fallback;
   font-size: 18px;
 }
 
 h4 {
   color: $blue;
   font-size: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  font-family: $regular, $fallback;
 }
 
 p {
@@ -65,7 +65,7 @@ p {
 }
 
 .hero {
-  height: 330px;
+  height: 350px;
   width: 100%;
   background-image: url('img/hero.png');
   background-size: cover;
@@ -90,6 +90,8 @@ p {
   box-shadow: 0px 3px 0px 0px #004B8C;
   border-radius: 7.59px;
   margin: 0px 40px;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 200px;
   height: 65px;
   padding: 22px 40px 22px 40px;
@@ -104,9 +106,19 @@ p {
     line-height: 21px;
 }
 
+#demo {
+  margin-top: 145px;
+}
+
 #interface {
-  height: 593;
-  width: auto;
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
+#newProject {
+  margin-bottom: 30px;
 }
 
 #back {
