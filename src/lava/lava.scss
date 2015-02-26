@@ -24,7 +24,7 @@ a:hover {
 
 h1 {
   font-family: $bold, $fallback;
-  margin-top: 80px;
+  margin-top: 55px;
   color: $textColor;
   font-size: 80px;
 }
@@ -123,4 +123,45 @@ p {
 
 #back {
   color: rgba(0, 0, 0, 0.5);
+}
+
+.outer, .inner {
+  display: none;
+}
+
+#mobile-screens {
+  display: none;
+}
+
+@media only screen
+and (max-width : 640px) {
+
+    h1 {
+      margin-top: 30px;
+      font-size: 40px;
+    }
+
+    h2 {
+      line-height: 22px;
+      font-size: 18px;
+    }
+
+    .hero {
+      height: 200px;
+      margin-bottom: 20px;
+    }
+
+    #demo {
+      margin-top: 70px;
+    }
+
+    .body-text {
+      font-size: 16px;
+      line-height: 27px;
+    }
+
+    #interface {
+      display: none;
+    }
+
 }

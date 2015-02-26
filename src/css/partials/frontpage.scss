@@ -115,3 +115,48 @@ a {
     color: #000;
   }
 }
+
+@media only screen
+and (max-width : 640px) {
+
+    .head {
+      margin-top: 30px;
+    }
+
+    .headerContent {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    #headshot {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+      height: auto;
+    }
+
+    #footer {
+      display: none;
+    }
+
+    h1 {
+      font-size: 35px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    h5 {
+      display: block;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+}
