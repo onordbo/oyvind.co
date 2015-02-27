@@ -36,7 +36,7 @@ h2 {
   font-size: 24px;
   line-height: 29px;
   color: $blue;
-  max-width: 390px;
+  max-width: 450px;
   text-align: center;
   margin: 0 auto;
   margin-top: 25px;
@@ -67,11 +67,10 @@ p {
 }
 
 .hero {
-  height: 350px;
+  height: 450px;
   width: 100%;
   background-image: url('img/hero.png');
   background-size: cover;
-  background-position: center;
   margin: 40px 0 20px 0;
 }
 
@@ -109,7 +108,7 @@ p {
 }
 
 #demo {
-  margin-top: 145px;
+  margin-top: 190px;
 }
 
 #interface {
@@ -117,7 +116,8 @@ p {
   max-width: 700px;
   display: block;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 #newProject {
@@ -126,6 +126,10 @@ p {
 
 #back {
   color: rgba(0, 0, 0, 0.5);
+}
+
+.click p {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 @media only screen
