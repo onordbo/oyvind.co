@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/fonts/fonts.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sweet-alert.css">
 
   <!-- Yes, I do know HTML/CSS (Some JavaScript). Find my code on http://github.com/onordbo -->
 
@@ -56,11 +57,12 @@
       <div class="col-md-6">
         <h3>Stuff I've done</h3>
         <ul class="left-list">
-          <li><a href="#"><p>Geolarm</p></a></li>
           <li><a href="/lava"><p>Lava</p></a></li>
-          <li><a href="#"><p>Thrift</p></a></li>
           <li><a href="/spotify"><p>Spotify Match</p></a></li>
+          <li><a href="#"><p>Thrift</p></a></li>
+          <li><a href="#"><p>Dated</p></a></li>
           <li><a href="#"><p>Shapr</p></a></li>
+          <li><a href="#"><p>Geolarm</p></a></li>
         </ul>
       </div><!-- /.projects -->
 
@@ -80,13 +82,24 @@
 
     <div id="footer">
       <div class="col-md-12 text-center">
-        <p>oyvinor@gmail.com // <a href="#" onClick='javascript:alert("Coming soon!");'>Playground</a> // +47 452 98 497</p>
+        <p>oyvinor@gmail.com // <a href="#" onClick=comingSoon()>Playground</a> // +47 452 98 497</p>
       </div>
     </div id="footer">
 
     <!-- Scripts -->
     <script src="js/ga.js"></script>
     <script src="js/title.js"></script>
+    <script src="js/sweet-alert.min.js"></script>
+
+    <script type="text/javascript">
+      var comingSoon = function () {
+        swal({
+          title: "Still playing :)",
+          text: "This page is coming soon.",
+          type: "warning",
+          confirmButtonText: "Cool!" });
+      }
+    </script>
 
   </body>
 </html>
