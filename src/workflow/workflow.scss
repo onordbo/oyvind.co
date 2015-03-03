@@ -4,25 +4,27 @@
 @import "../css/partials/animation.scss";
 @import "../css/partials/project.scss";
 
-#demo {
-  margin-top: 145px;
-}
 
 .hero {
-  height: 350px;
+  height: 330px;
   width: 100%;
-  background-image: url('img/hero.png');
+  background-image: url('img/sitemap.png');
   background-size: cover;
   background-position: center;
   margin: 40px 0 20px 0;
 }
 
-#interface {
+#demo {
+  margin-top: 145px;
+}
+
+#iterate {
   width: 100%;
   max-width: 700px;
   display: block;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 @media only screen
@@ -50,10 +52,6 @@ and (max-width : 640px) {
     .body-text {
       font-size: 16px;
       line-height: 27px;
-    }
-
-    #interface {
-      display: none;
     }
 
 }

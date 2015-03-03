@@ -35,7 +35,8 @@ module.exports = function(grunt) {
           'build/css/main.css': 'src/css/main.scss',
           'build/about/about.css': 'src/about/about.scss',
           'build/lava/lava.css': 'src/lava/lava.scss',
-          'build/spotify/spotify.css': 'src/spotify/spotify.scss'
+          'build/spotify/spotify.css': 'src/spotify/spotify.scss',
+          'build/workflow/workflow.css': 'src/workflow/workflow.scss'
         }
       }
     },

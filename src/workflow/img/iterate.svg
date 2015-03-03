@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="621px" height="281px" viewBox="0 0 621 281" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>iterate</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-202.000000, -1244.000000)">
+            <g id="Iteration-Model" sketch:type="MSLayerGroup" transform="translate(202.000000, 1244.000000)">
+                <g id="Assumption-+-Hypothesis-+-+" transform="translate(114.000000, 2.000000)">
+                    <g id="Assumption-+-Hypothesis">
+                        <g id="Assumption">
+                            <text id="Assumptions" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="18" font-weight="bold" fill="#000000">
+                                <tspan x="37" y="29">Assumptions</tspan>
+                            </text>
+                            <rect id="Rectangle-5" stroke="#000000" stroke-width="2" sketch:type="MSShapeGroup" x="0" y="0" width="180" height="45" rx="3"></rect>
+                        </g>
+                        <g id="Hypothesis" transform="translate(218.000000, 0.000000)">
+                            <text sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="18" font-weight="bold" sketch:alignment="middle" fill="#000000">
+                                <tspan x="44.28" y="29">Hypothesis</tspan>
+                            </text>
+                            <rect id="Rectangle-5" stroke="#000000" stroke-width="2" sketch:type="MSShapeGroup" x="0" y="0" width="180" height="45" rx="3"></rect>
+                        </g>
+                    </g>
+                    <text id="+" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="18" font-weight="bold" fill="#000000">
+                        <tspan x="194" y="32">+</tspan>
+                    </text>
+                </g>
+                <g id="MVP-+-Rectangle-11" transform="translate(439.000000, 84.000000)">
+                    <g id="MVP" transform="translate(0.000000, 40.000000)">
+                        <text id="Create-MVP" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="18" font-weight="bold" sketch:alignment="middle" fill="#000000">
+                            <tspan x="40.905" y="29">Create MVP</tspan>
+                        </text>
+                        <rect id="Rectangle-5" stroke="#000000" stroke-width="2" sketch:type="MSShapeGroup" x="0" y="0" width="180" height="45" rx="3"></rect>
+                    </g>
+                    <path d="M61.8996564,5.51543325 L57.6739001,4.38314528 C57.1355272,4.23888868 56.587614,4.55200885 56.445775,5.08135935 L56.1750795,6.0916089 C56.0339892,6.61816473 56.3531242,7.16660505 56.8895599,7.31034257 L62.9993146,8.94744641 C63.2924459,9.0259907 63.5884054,8.96894363 63.8201079,8.81522924 C64.0581805,8.68877733 64.2462961,8.46644356 64.3220378,8.18377183 L65.9591416,2.07401714 C66.1033982,1.53564421 65.7902781,0.98773109 65.2609276,0.84589205 L64.250678,0.5751965 C63.7241222,0.43410629 63.1756819,0.753241272 63.0319443,1.28967699 L61.8996564,5.51543325 Z" id="Rectangle-11" fill="#000000" sketch:type="MSShapeGroup"></path>
+                </g>
+                <g id="Testing-+-Rectangle-14-+-Rectangle-15" transform="translate(184.000000, 204.000000)">
+                    <g id="Testing" transform="translate(39.000000, 30.000000)">
+                        <text sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="18" font-weight="bold" sketch:alignment="middle" fill="#000000">
+                            <tspan x="60.579" y="29">Testing</tspan>
+                        </text>
+                        <rect id="Rectangle-5" stroke="#000000" stroke-width="2" sketch:type="MSShapeGroup" x="0" y="0" width="180" height="45" rx="3"></rect>
+                    </g>
+                    <path d="M246.899656,7.51543325 L242.6739,6.38314528 C242.135527,6.23888868 241.587614,6.55200885 241.445775,7.08135935 L241.175079,8.0916089 C241.033989,8.61816473 241.353124,9.16660505 241.88956,9.31034257 L247.999315,10.9474464 C248.292446,11.0259907 248.588405,10.9689436 248.820108,10.8152292 C249.058181,10.6887773 249.246296,10.4664436 249.322038,10.1837718 L250.959142,4.07401714 C251.103398,3.53564421 250.790278,2.98773109 250.260928,2.84589205 L249.250678,2.5751965 C248.724122,2.43410629 248.175682,2.75324127 248.031944,3.28967699 L246.899656,7.51543325 Z" id="Rectangle-14" fill="#000000" sketch:type="MSShapeGroup" transform="translate(246.068829, 6.763040) rotate(80.000000) translate(-246.068829, -6.763040) "></path>
+                    <path d="M6.89965636,7.51543325 L2.6739001,6.38314528 C2.13552717,6.23888868 1.58761404,6.55200885 1.445775,7.08135935 L1.17507945,8.0916089 C1.03398924,8.61816473 1.35312423,9.16660505 1.88955995,9.31034257 L7.99931464,10.9474464 C8.29244592,11.0259907 8.58840543,10.9689436 8.82010788,10.8152292 C9.05818054,10.6887773 9.24629614,10.4664436 9.3220378,10.1837718 L10.9591416,4.07401714 C11.1033982,3.53564421 10.7902781,2.98773109 10.2609276,2.84589205 L9.25067801,2.5751965 C8.72412218,2.43410629 8.17568185,2.75324127 8.03194434,3.28967699 L6.89965636,7.51543325 Z" id="Rectangle-15" fill="#000000" sketch:type="MSShapeGroup" transform="translate(6.068829, 6.763040) scale(1, -1) rotate(80.000000) translate(-6.068829, -6.763040) "></path>
+                </g>
+                <g id="Research-+-Rectangle-13" transform="translate(2.000000, 84.000000)">
+                    <g id="Research" transform="translate(0.000000, 39.000000)">
+                        <text sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="18" font-weight="bold" sketch:alignment="middle" fill="#000000">
+                            <tspan x="52.398" y="29">Research</tspan>
+                        </text>
+                        <rect id="Rectangle-5" stroke="#000000" stroke-width="2" sketch:type="MSShapeGroup" x="0" y="0" width="180" height="45" rx="3"></rect>
+                    </g>
+                    <path d="M118.899656,5.51543325 L114.6739,4.38314528 C114.135527,4.23888868 113.587614,4.55200885 113.445775,5.08135935 L113.175079,6.0916089 C113.033989,6.61816473 113.353124,7.16660505 113.88956,7.31034257 L119.999315,8.94744641 C120.292446,9.0259907 120.588405,8.96894363 120.820108,8.81522924 C121.058181,8.68877733 121.246296,8.46644356 121.322038,8.18377183 L122.959142,2.07401714 C123.103398,1.53564421 122.790278,0.98773109 122.260928,0.84589205 L121.250678,0.5751965 C120.724122,0.43410629 120.175682,0.753241272 120.031944,1.28967699 L118.899656,5.51543325 Z" id="Rectangle-13" fill="#000000" sketch:type="MSShapeGroup" transform="translate(118.068829, 4.763040) scale(1, -1) translate(-118.068829, -4.763040) "></path>
+                </g>
+                <text id="Iteration" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="22" font-weight="bold" sketch:alignment="middle" fill="#000000">
+                    <tspan x="273.557" y="151">Iteration</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
