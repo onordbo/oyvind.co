@@ -2,69 +2,8 @@
 @import "../css/partials/typography.scss";
 @import "../css/partials/boiler.scss";
 @import "../css/partials/animation.scss";
+@import "../css/partials/project.scss";
 
-$textColor: rgba(0, 0, 0, 1);
-
-body {
-  background-color: $silver;
-}
-
-img {
-  width: 100px;
-  margin: 20px 10px 20px 10px;
-}
-
-a {
-  color: $blue;
-  font-size: 18px;
-  font-family: $regular, $fallback;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-h1 {
-  font-family: $bold, $fallback;
-  margin-top: 55px;
-  color: $textColor;
-  font-size: 80px;
-}
-
-h2 {
-  font-family: $light, $fallback;
-  font-size: 24px;
-  line-height: 29px;
-  color: $blue;
-  max-width: 390px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 25px;
-}
-
-h3 {
-  margin-top: 30px;
-  font-family: $bold, $fallback;
-  font-size: 18px;
-}
-
-h4 {
-  color: $blue;
-  font-size: 16px;
-  margin: 15px 0 10px 0;
-  font-family: $regular, $fallback;
-}
-
-p {
-  line-height: 33px;
-  font-size: 18px;
-  font-family: $regular, $fallback;
-  color: $textColor;
-}
-
-.container {
-  max-width: 700px;
-}
 
 .hero {
   height: 350px;
@@ -73,39 +12,6 @@ p {
   background-size: cover;
   background-position: center;
   margin: 40px 0 20px 0;
-}
-
-.body-text {
-  line-height: 37px;
-  font-size: 18px;
-  font-family: $regular, $fallback;
-  color: $textColor;
-}
-
-.buttons {
-  margin-top: 60px;
-  margin-bottom: 90px;
-}
-
-.blueButton {
-  background: #0074D9;
-  box-shadow: 0px 3px 0px 0px #004B8C;
-  border-radius: 7.59px;
-  margin: 0px 40px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 200px;
-  height: 65px;
-  padding: 22px 40px 22px 40px;
-  display: block;
-  text-align: center;
-}
-
-.blueButton > p {
-    font-family: $regular;
-    font-size: 18px;
-    color: #FFFFFF;
-    line-height: 21px;
 }
 
 #demo {
@@ -118,14 +24,6 @@ p {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
-}
-
-#newProject {
-  margin-bottom: 30px;
-}
-
-#back {
-  color: rgba(0, 0, 0, 0.5);
 }
 
 @media only screen
