@@ -4,26 +4,21 @@
 @import "../css/partials/animation.scss";
 @import "../css/partials/project.scss";
 
-.hero {
-  height: 350px;
-  width: 100%;
-  background-image: url('img/sitemap.png');
-  background-size: cover;
-  background-position: center;
-  margin: 40px 0 20px 0;
-}
-
 #demo {
   margin-top: 145px;
 }
 
-#iterate {
+.hero {
+  height: 489px;
   width: 100%;
-  max-width: 700px;
-  display: block;
+  max-width: 640px;
+  background-image: url('img/hero.png');
+  background-size: cover;
+  background-position: center;
   margin: 0 auto;
-  margin-top: 78px;
-  margin-bottom: 63px;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 @media only screen
@@ -40,7 +35,8 @@ and (max-width : 640px) {
     }
 
     .hero {
-      height: 200px;
+      height: 300px;
+      max-width: 400px;
       margin-bottom: 20px;
     }
 
@@ -51,6 +47,10 @@ and (max-width : 640px) {
     .body-text {
       font-size: 16px;
       line-height: 27px;
+    }
+
+    #interface {
+      display: none;
     }
 
 }

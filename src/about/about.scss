@@ -2,7 +2,7 @@
 @import "../css/partials/typography.scss";
 @import "../css/partials/boiler.scss";
 @import "../css/partials/animation.scss";
-
+@import "../css/partials/project.scss";
 
 $textColor: rgba(0, 0, 0, 1);
 
@@ -39,29 +39,8 @@ a > p {
   color: $textColor;
 }
 
-h1 {
-  font-family: $semiBold, $fallback;
-  margin-top: 70px;
-  color: $textColor;
-}
-
-p {
-  line-height: 33px;
-  font-size: 18px;
-  font-family: $regular, $fallback;
-  color: $textColor;
-}
-
 .body-text {
-  line-height: 37px;
-  font-size: 18px;
-  font-family: $regular, $fallback;
-  color: $textColor;
   margin-top: 25px;
-}
-
-.container {
-  max-width: 660px;
 }
 
 .intro {
