@@ -2,6 +2,9 @@
 
 module.exports = function(grunt) {
 
+  //Measure time spent per task
+  require('time-grunt')(grunt);
+
   //Task configuration
   grunt.initConfig({
 
@@ -84,7 +87,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
-
+  grunt.loadNpmTasks('grunt-newer');
 
   //Register tasks
 
@@ -99,7 +102,7 @@ module.exports = function(grunt) {
   grunt.registerTask(
     'build',
     'Clean development directory, run CSS task',
-    [ 'clean:build', 'copy', 'css' ]
+    [ 'clean:build', 'newer:copy', 'css' ]
   );
 
   //Developer mode
@@ -108,5 +111,6 @@ module.exports = function(grunt) {
     'Developer mode, watches files and runs automation',
     [ 'build', 'connect', 'watch' ]
   );
-
 }
+
+
