@@ -1,28 +1,31 @@
 //Set domain variable because, convenient.
-var domain = "http://oyvind.co/"
+var domain = "http://beta.oyvind.co/"
 
 //List projects
 var projectList = [
-	domain + "project",
-	domain + "project",
-	domain + "project",
-	domain + "project",
-	domain + "project",
-	domain + "project",
-	domain + "project"
-]
+	"dated",
+	"lava",
+	"spotify"
+];
 
 //Index function
 var randomProject = function () {
 	//Count objects in projectList array
-	var indexProjects = Math.floor(Math.random()*projectList.length)
+	var indexProject = Math.floor(Math.random()*projectList.length)
 	//Retrieve an object based on random index
-	/* Code code code */
+	var url = domain+projectList[indexProject];
 	//Return chosen object
-	/* Code code code */
+	return url.toString();
 }
 
 //Reload page with chosen object
 var loadRandomProject = function () {
-	location.reload(chosenProject);
+	window.location.href = randomProject();
 }
+
+//If you want on siteload; call loadRandomProject()
+/*
+window.onload = function(){
+	loadRandomProject();
+};
+*/
