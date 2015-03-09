@@ -40,7 +40,8 @@ module.exports = function(grunt) {
           'build/lava/lava.css': 'src/lava/lava.scss',
           'build/spotify/spotify.css': 'src/spotify/spotify.scss',
           'build/workflow/workflow.css': 'src/workflow/workflow.scss',
-          'build/dated/dated.css': 'src/dated/dated.scss'
+          'build/dated/dated.css': 'src/dated/dated.scss',
+          'build/spotify/interface/interface.css': 'src/spotify/interface/interface.scss'
         }
       }
     },
@@ -95,14 +96,14 @@ module.exports = function(grunt) {
   grunt.registerTask(
     'css',
     'Compile and autoprefix CSS',
-    [ 'sass', 'autoprefixer' ]
+    [ 'newer:sass', 'newer:autoprefixer' ]
   );
 
   //Build stack
   grunt.registerTask(
     'build',
     'Clean development directory, run CSS task',
-    [ 'clean:build', 'newer:copy', 'css' ]
+    [ 'newer:clean:build', 'newer:copy', 'css' ]
   );
 
   //Developer mode

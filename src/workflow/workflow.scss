@@ -4,6 +4,10 @@
 @import "../css/partials/animation.scss";
 @import "../css/partials/project.scss";
 
+.quote {
+  font-family: $italic;
+}
+
 .hero {
   height: 350px;
   width: 100%;

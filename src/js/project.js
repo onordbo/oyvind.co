@@ -1,4 +1,4 @@
-//Set domain variable because, lazy and convenient.
+//Set domain variable because, convenient.
 var domain = "http://oyvind.co/"
 
 //List projects
