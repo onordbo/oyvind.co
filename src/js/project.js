@@ -5,6 +5,8 @@ var domain = "http://beta.oyvind.co/"
 var projectList = [
 	"dated",
 	"lava",
+	"geolarm",
+	"workflow",
 	"spotify"
 ];
 

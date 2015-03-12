@@ -1,0 +1,55 @@
+@import "../css/partials/colors.scss";
+@import "../css/partials/typography.scss";
+@import "../css/partials/boiler.scss";
+@import "../css/partials/animation.scss";
+@import "../css/partials/project.scss";
+
+#demo {
+  margin-top: 145px;
+}
+
+.hero {
+  height: 814px;
+  width: 100%;
+  max-width: 740px;
+  background-image: url('img/hero.png');
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 8px;
+}
+
+//Global project styling for mobile
+@import "../css/partials/project-mobile.scss";
+
+//Page specific
+@media only screen
+and (max-width : 640px) {
+
+    h1 {
+      margin-top: 30px;
+      font-size: 40px;
+    }
+
+    h2 {
+      line-height: 22px;
+      font-size: 18px;
+    }
+
+    .hero {
+      height: 440px;
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+
+    #demo {
+      margin-top: 70px;
+    }
+
+}

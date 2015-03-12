@@ -8,12 +8,14 @@ body {
   background-color: $silver;
 }
 
-//Typography styling
-
 h1 {
   color: $solidBlack;
   font-size: 40px;
   font-family: $bold, $fallback;
+}
+
+h2 {
+  max-width: 400px;
 }
 
 h3 {
@@ -134,10 +136,10 @@ and (max-width : 640px) {
     }
 
     #headshot {
-      display: none;
+      display: block;
       margin: 0 auto;
       width: 100px;
-	  text-align: center;
+      text-align: center;
     }
 
     .headerContent {
@@ -170,12 +172,27 @@ and (max-width : 640px) {
     	padding: 5px;
     	margin-top: 30px;
     	position: static;
-    	width: 500px;
+    	max-width: 500px;
     	left: 0;
-		transform: translate(0, 0);
+		  transform: translate(0, 0);
     	p {
-		  font-size: 1.1em;
-		}
+		    font-size: 1.1em;
+		  }
     }
 
+}
+
+@media only screen and (max-width: 1136px) {
+  footer {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 5px;
+      margin-top: 30px;
+      position: static;
+      max-width: 500px;
+      left: 0;
+      transform: translate(0, 0);
+      p {
+        font-size: 1.1em;
+      }
+    }
 }
