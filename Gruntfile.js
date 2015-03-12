@@ -35,7 +35,7 @@ module.exports = function(grunt) {
           style: 'compressed'
         },
         files: {
-          'build/css/main.css': 'src/css/main.scss',
+          'build/front.css': 'src/front.scss',
           'build/about/about.css': 'src/about/about.scss',
           'build/lava/lava.css': 'src/lava/lava.scss',
           'build/spotify/spotify.css': 'src/spotify/spotify.scss',

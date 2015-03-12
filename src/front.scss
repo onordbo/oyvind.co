@@ -1,0 +1,181 @@
+@import "css/partials/colors.scss";
+@import "css/partials/typography.scss";
+@import "css/partials/boiler.scss";
+@import "css/partials/animation.scss";
+@import "css/partials/mobile.scss";
+
+body {
+  background-color: $silver;
+}
+
+//Typography styling
+
+h1 {
+  color: $solidBlack;
+  font-size: 40px;
+  font-family: $bold, $fallback;
+}
+
+h3 {
+  font-family: $light, $fallback;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+h5 {
+  color: $blue;
+  font-family: $regular, $fallback;
+  font-size: 16px;
+}
+
+p {
+  font-family: $bold;
+  font-size: 18px;
+  line-height: 1.8em;
+}
+
+a {
+  color: $blue;
+  transition: color .3s;
+  &:hover {
+    text-decoration: none;
+    color: darken($blue, 15%);
+  }
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+#about {
+  border-bottom: 1px solid $blue;
+} 
+
+.head {
+  margin-top: 100px;
+  margin-bottom: 25px;
+  max-width: 520px;
+}
+
+#headshot {
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.21);
+  display: block;
+  float: left;
+  margin: 5px;
+  max-width: 150px;
+}
+
+.headerContent {
+  display: block;
+  float: right;
+}
+
+#social ul li {
+  display: inline;
+  margin: 0 5px;
+  list-style-type: none;
+}
+
+#social ul {
+  margin-top: 15px;
+  padding: 0px;
+}
+
+#social li:nth-child(1) {
+  margin-right: 1px;
+}
+
+#social li:nth-child(4) {
+  margin-left: 2px;
+}
+
+.icon {
+  width: 40px;
+}
+
+#linkedin {
+  width: 47px;
+}
+
+.left-list, .right-list {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+}
+
+.list {
+  max-width: 705px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	p {
+		font-family: $light;
+		font-size: 1.2em;
+		color: #000;
+	}
+	.mail {
+		color: #000;
+		&:visited {
+			text-decoration: none;
+		}
+	}
+}
+
+@media only screen
+and (max-width : 640px) {
+
+    .head {
+      margin-top: 10px;
+    }
+
+    #headshot {
+      display: none;
+      margin: 0 auto;
+      width: 100px;
+	  text-align: center;
+    }
+
+    .headerContent {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 35px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    h5 {
+      display: block;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    footer {
+    	border-top: 1px solid rgba(0, 0, 0, 0.1);
+    	padding: 5px;
+    	margin-top: 30px;
+    	position: static;
+    	width: 500px;
+    	left: 0;
+		transform: translate(0, 0);
+    	p {
+		  font-size: 1.1em;
+		}
+    }
+
+}
