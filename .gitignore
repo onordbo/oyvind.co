@@ -29,3 +29,6 @@ node_modules
 
 # Bower dependencies
 bower_components
+
+# Sass Stuff
+.sass-cache

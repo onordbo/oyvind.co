@@ -114,5 +114,3 @@ module.exports = function(grunt) {
     [ 'build', 'connect', 'watch' ]
   );
 }
-
-
