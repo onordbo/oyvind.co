@@ -15,7 +15,7 @@ var randomProject = function () {
 	//Count objects in projectList array
 	var indexProject = Math.floor(Math.random()*projectList.length)
 	//Retrieve an object based on random index
-	var url = domain+projectList[indexProject];
+	var url = domain + projectList[indexProject];
 	//Return chosen object
 	return url.toString();
 }
@@ -24,10 +24,3 @@ var randomProject = function () {
 var loadRandomProject = function () {
 	window.location.href = randomProject();
 }
-
-//If you want on siteload; call loadRandomProject()
-/*
-window.onload = function(){
-	loadRandomProject();
-};
-*/
