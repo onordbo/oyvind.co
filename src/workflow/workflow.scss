@@ -9,7 +9,7 @@
 }
 
 .hero {
-  height: 350px;
+  height: 400px;
   width: 100%;
   background-image: url('img/sitemap.png');
   background-size: cover;
@@ -55,6 +55,10 @@ and (max-width : 640px) {
 
   .quote {
     font-style: italic;
+  }
+
+  .hero {
+    height: 140px;
   }
 
 }
