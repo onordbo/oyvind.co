@@ -42,6 +42,7 @@ module.exports = function(grunt) {
           'build/workflow/workflow.css': 'src/workflow/workflow.scss',
           'build/dated/dated.css': 'src/dated/dated.scss',
           'build/geolarm/geolarm.css': 'src/geolarm/geolarm.scss',
+          'build/shapr/shapr.css': 'src/shapr/shapr.scss',
           'build/spotify/interface/interface.css': 'src/spotify/interface/interface.scss'
         }
       }

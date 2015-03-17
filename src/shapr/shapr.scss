@@ -9,7 +9,7 @@
 }
 
 .hero {
-  height: 800px;
+  height: 814px;
   width: 100%;
   max-width: 740px;
   background-image: url('img/hero.png');
@@ -19,6 +19,22 @@
   display: block;
   margin-top: 40px;
   margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 8px;
+  max-width: 400px;
+}
+
+#calendar {
+  display: block;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.below {
+  margin-top: 35px;
 }
 
 //Global project styling for mobile
