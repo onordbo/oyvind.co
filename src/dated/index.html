@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- SEO n' stuff -->
+  <meta name="title" content="Dated – Øyvind Nordbø">
+  <meta name="description" content="I got tired of finding expired milk cartons in my fridge, so I decided to do something about it. What you see before you is the simplest reminder app you will ever use.">
+
+  <!-- Facebook -->
+  <meta property="og:title"       content="Dated – Øyvind Nordbø">
+  <!-- 1200x650px -->
+  <meta property="og:image"       content="http://oyvind.co/facebook/dated/Dated_FB.jpg">
+  <meta property="og:url"         content="http://oyvind.co/dated">
+  <meta property="og:description" content="I got tired of finding expired milk cartons in my fridge, so I decided to do something about it. What you see before you is the simplest reminder app you will ever use.">
+
+  <!-- Twitter -->
+  <meta name="twitter:card"  content="summary_large_image">
+  <meta name="twitter:url"   content="http://oyvind.co/dated">
+  <meta name="twitter:title" content="Dated – Øyvind Nordbø">
+  <meta property="twitter:description" content="I got tired of finding expired milk cartons in my fridge, so I decided to do something about it. What you see before you is the simplest reminder app you will ever use.">
+  <!-- 280x150px @ <1MB -->
+  <meta name="twitter:image" content="http://oyvind.co/twitter/dated/Dated_Twitter.jpg">
+
+  <!-- Everything else -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">    
   <title>Dated</title>
@@ -13,6 +33,14 @@
 </head>
 <body class="fade-body">
     <div class="container">
+      
+        <!-- Back -->
+        <div class="back text-center">
+          <a href="/../index.html">
+            <p id="back">Back to front</p>
+          </a>
+        </div>
+
         <div class="col-md-12 body-text">
           <h1 class="text-center">Dated</h1>
           <h2 class="text-center">Your stuff expires, you know.</h2>
@@ -55,7 +83,7 @@
     <div class="container text-center buttons">
       
       <!-- Project -->
-      <a href="" onclick=loadRandomProject()>
+      <a href="#" onclick=loadRandomProject()>
         <div id="newProject" class="blueButton">
           <p>Give me more</p>
         </div>
