@@ -55,22 +55,20 @@ a {
 .head {
   margin-top: 100px;
   margin-bottom: 25px;
-  max-width: 520px;
+  max-width: 630px;
+  width: 100%;
 }
 
 #headshot {
+  margin-left: auto;
+  margin-top: 15px;
+  position: relative;
+  display: block;
   border-radius: 50%;
   border: 2px solid white;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.21);
-  display: block;
-  float: left;
-  margin: 5px;
   max-width: 150px;
-}
-
-.headerContent {
-  display: block;
-  float: right;
+  width: 100%
 }
 
 #social ul li {
@@ -102,7 +100,8 @@ a {
 }
 
 #linkedin {
-  width: 47px;
+  max-width: 47px;
+  width: 44px;
 }
 
 .left-list, .right-list {
@@ -134,27 +133,44 @@ footer {
 }
 
 @media only screen
+and (max-width: 992px) {
+  #headshot, .text {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media only screen
 and (max-width : 640px) {
 
+    .nopad {
+      padding: 0;
+    }
+
+    .icon {
+      max-width: 35px;
+    }
+
+    #linkedin {
+      max-width: 47px;
+      width: 41px;
+    }
+
     .head {
-      margin-top: 10px;
+      margin-top: 40px;
     }
 
     #headshot {
       display: block;
       margin: 0 auto;
-      width: 100px;
-      text-align: center;
-    }
-
-    .headerContent {
-      display: block;
-      margin: 0 auto;
+      width: 150px;
       text-align: center;
     }
 
     h1 {
-      font-size: 35px;
+      font-size: 38px;
+      margin-bottom: -10px;
     }
 
     h3 {
@@ -162,10 +178,10 @@ and (max-width : 640px) {
     }
 
     h5 {
-      display: block;
       margin: 0 auto;
-      font-size: 14px;
-      line-height: 25px;
+      font-size: 16px;
+      margin-top: 20px;
+      line-height: 23px;
     }
 
     p {
