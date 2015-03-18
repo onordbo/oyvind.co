@@ -24,11 +24,11 @@ var randomProject = function () {
 //Get the currently active url
 var checkCurrentURL = function () {
 	//Store currently active link
-	var getProject = document.URL;
+	var activeProject = document.URL;
 	//Strip "http://oyvind.co/" from link
-	var currentProject = getProject - "http://beta.oyvind.co/"
+	var project = activeProject - "http://beta.oyvind.co/"
 	//Exclude current URL from projectIndex
-	if (currentProject == getProject) {
+	if (project == activeProject) {
 		randomProject;
 	}
 }
