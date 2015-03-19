@@ -20,14 +20,29 @@ var randomProject = function () {
 	return url.toString();
 }
 
+var loadRandomProject = function () {
+	//Get active URL
+	var activeURL = document.URL;
+	//Find the last "/"
+	var domainLength = domain.length;
+	//Slice up the link
+	var activeProject = activeURL.splice(domainLength, activeURL.length - domainLength);
+	//Store the last part of the link
+	/* Code Code Code */
+	//Compare link to chosen random object
+	if (/* Active object == Chosen object*/) {
+		//Get new URL
+	} else {
+		//Reload page with chosen object
+		window.location.href = randomProject();
+	}
+}
+
+/*
 //Reload page with chosen object
 var loadRandomProject = function () {
 	window.location.href = randomProject();
 }
-
-/*
-	//If you want on siteload; call loadRandomProject()
-	window.onload = function(){
-		loadRandomProject();
-	};
 */
+
+//url.splice(domain, activeURL.length - domain)

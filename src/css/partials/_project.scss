@@ -23,7 +23,7 @@ p {
 
 h1 {
   font-family: $bold, $fallback;
-  margin-top: 55px;
+  margin-top: 10px;
   color: $textColor;
   font-size: 80px;
 }
@@ -127,5 +127,17 @@ ul {
 }
 
 .back-top {
-  margin-top: 50px; 
+  $back-gray: rgba(0, 0, 0, 0.4);
+  margin-top: 15px;
+  a {
+    color: $back-gray;
+    &:hover {
+      color: $back-gray;
+    }
+  }
+  p {
+    font-size: 12px;
+    margin-top: -10px;
+    color: $back-gray;
+  }
 }

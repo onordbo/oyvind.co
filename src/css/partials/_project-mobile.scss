@@ -3,7 +3,7 @@
 and (max-width : 640px) {
 
     h1 {
-      margin-top: 30px;
+      margin-top: 10px;
       font-size: 40px;
     }
 
@@ -63,4 +63,17 @@ and (max-width : 640px) {
       margin-top: 10px;
     }
 
+    .back-top {
+      $back-gray: rgba(0, 0, 0, 0.4);
+      margin-top: 10px;
+      a {
+        color: $back-gray;
+        &:hover {
+          color: $back-gray;
+        }
+      }
+      p {
+        display: none;
+      }
+    }
 }
