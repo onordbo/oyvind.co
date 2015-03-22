@@ -1,2 +1,2 @@
-# sass-grunt
-Grunt workflow with SASS for my portfolio
+# Portfolio 
+This is the source code for my [portfolio website.](http://oyvind.co), it’s built on a GruntJS build system I wrote myself, with SASS as the pre-processing CSS language of choice. Feel free to poke around!
